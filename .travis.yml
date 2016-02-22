@@ -1,16 +1,8 @@
-language: objective-c
-
-cache:
-  directories:
-    - downloads
-    - $HOME/.cache/pip
+language: python
 
 script:
-  
-  - which python
-  - which pip
-  
-  # Download required files
-  - mkdir -p downloads
-  - cd downloads
-  - wget -nc http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
+  - wget http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
+  - pip install sip
+  - pip install pyqt5
+  - pip install numpy scipy astropy pandas dill scipy ipython ipykernel qtconsole
+  - pip install pyinstaller
