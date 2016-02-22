@@ -1,5 +1,8 @@
 language: python
 
+os:
+  - osx
+
 script:
   - wget http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
   - pip install http://sourceforge.net/projects/pyqt/files/sip/sip-4.17/sip-4.17.tar.gz
