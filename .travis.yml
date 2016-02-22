@@ -3,6 +3,7 @@ language: objective-c
 cache:
   directories:
     - downloads
+    - $HOME/.cache/pip
 
 script:
   
