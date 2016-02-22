@@ -3,9 +3,25 @@ language: python
 os:
   - osx
 
-script:
-  - wget http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
-  - pip install http://sourceforge.net/projects/pyqt/files/sip/sip-4.17/sip-4.17.tar.gz
-  - pip install http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.5.1/PyQt-gpl-5.5.1.tar.gz
-  - pip install numpy astropy pandas matplotlib dill scipy ipython ipykernel qtconsole
-  - pip install pyinstaller
+install:
+  - brew install pyqt5
+
+  # - wget http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
+  # -
+  # - sudo installer -package /Volume/ -target "/Volumes/Macintosh HD"
+  #
+  # - wget http://sourceforge.net/projects/pyqt/files/sip/sip-4.17/sip-4.17.tar.gz
+  # - tar xvzf sip-4.17.tar.gz
+  # - cd sip-4.17
+  # - python configure.py
+  # - make
+  # - sudo make install
+  #
+  # - wget http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.5.1/PyQt-gpl-5.5.1.tar.gz
+  # - tar xvzf PyQt-gpl-5.5.1.tar.gz
+  # - cd PyQt-gpl-5.5.1
+  # - python configure.py
+  # - make
+  # - sudo make install
+  #
+  # - pip install numpy astropy pandas matplotlib dill scipy ipython ipykernel qtconsole pyinstaller
