@@ -1,4 +1,14 @@
 language: objective-c
 
+cache:
+  directories:
+    - downloads
+
 script:
-  - python --version
+  
+  - which python
+  
+  # Download required files
+  - mkdir -p downloads
+  - cd downloads
+  - wget -nc http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
