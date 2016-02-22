@@ -2,7 +2,7 @@ language: python
 
 script:
   - wget http://download.qt.io/official_releases/qt/5.5/5.5.1/qt-opensource-mac-x64-clang-5.5.1.dmg
-  - pip install sip
-  - pip install pyqt5
-  - pip install numpy scipy astropy pandas dill scipy ipython ipykernel qtconsole
+  - pip install http://sourceforge.net/projects/pyqt/files/sip/sip-4.17/sip-4.17.tar.gz
+  - pip install http://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.5.1/PyQt-gpl-5.5.1.tar.gz
+  - pip install numpy astropy pandas matplotlib dill scipy ipython ipykernel qtconsole
   - pip install pyinstaller
