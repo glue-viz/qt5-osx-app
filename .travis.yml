@@ -5,7 +5,8 @@ os:
 
 install:
   - unset PYTHONPATH
-  - brew install pyqt5 numpy matplotlib
+  - brew install pyqt5
+  - pip3 install numpy matplotlib
   - pip3 install scipy pandas
   - pip3 install ipython qtconsole ipykernel
   - pip3 install pyinstaller
